@@ -110,3 +110,98 @@
 //     return --x;
 // }
 // console.log(dec(x))
+
+// 21- Write a script to swap two numbers
+// var a = 10;
+// var b = 20;
+// var temp = a;  // temp variable
+// a=b;
+// b=temp
+// console.log(a,b)
+
+// 22- Write a script to swap two numbers without using 3rd variable (please use *,%,/ not + and -)
+// var a = 10;
+// var b = 20;
+// a = a + b;  // 20+10 = 30
+// b = a - b; // 30 - 20 = 10
+// a = a - b;  // 30 - 10 = 20
+// console.log(a,b)
+
+// var a = 10;
+// var b = 20;
+// [a,b] = [b,a]
+// console.log(a,b)
+
+// var a = 10;
+// var b = 20;
+// a = a ^ b  // 30
+// b = a ^ b  // 10
+// a = a ^ b  // 30-10 = 20
+// console.log(a,b)
+
+// 23- Write a program to print the reminder of a division
+// var a = 100;
+// var b = 2;
+// console.log(a%b)
+
+// 24- Write a program to print the simple interest rate of given P T R values
+// var p = 100;
+// var t = 200;
+// var r = 20;
+// console.log((p*t*r)/100);
+
+// 25- Write a program to print the max of given two numbers using ternary operator
+// var a = 100;
+// var b = 200;
+// const max = a>b ? a : b;
+// console.log(max)
+
+// 26- Write a program to print the max of given three numbers using ternary operator
+// var a = 100;
+// var b = 200;
+// var c = 50;
+// const max = (a>b ? a : b ) > c ? (a>b ? a : b) : c
+// console.log(max);
+
+// 27- Find the area of a square for given length of a side
+// var l = 12;
+// var area = l*l;
+// console.log(area);
+
+// 28- Find the area of a rectangle for given length and breadth
+// var l = 25;
+// var b = 16;
+// var area = l*b;
+// console.log(area)
+
+// 29- Find the area of a triangle for given base and height
+// var base = 10;
+// var height = 8;
+// var area = 0.5 * base* height;
+// console.log(area)
+
+// 30- Check a given number is even or not using ternary operator
+// var a = 12;
+// const num = a%2 === 0 ? "even" : "odd";
+// console.log(num)
+
+// 31- Check a given number is odd or not using ternary operator
+// var a = 9;
+// const num = a%2 === 0 ? "even" : "odd";
+// console.log(num)
+
+// 32- Check a given number is positive or not using ternary operator
+// var a = -2;
+// const num = a>=0 ? "positive" : "negative"
+// console.log(num)
+
+// 33- Check a given number is multiple of 4 or not using ternary operator
+// var a = 16;
+// const num = a%4 === 0 ? "divisible" : "not divisible";
+// console.log(num);
+
+// 34- Print the (a+b)^2 for given a and b values
+// var a = 10;
+// var b = 20;
+// const res = (a+b)*(a+b);
+// console.log(res);
