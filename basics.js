@@ -205,3 +205,100 @@
 // var b = 20;
 // const res = (a+b)*(a+b);
 // console.log(res);
+
+// 35- Print the (a+b)^3 for given a and b values
+// var a = 10;
+// var b = 20;
+// const res = (a+b)**3;
+// console.log(res);
+
+// 36- Print the (a+b+c)^2 for given a,b and c values
+// var a = 10;
+// var b = 20;
+// var c = 30;
+// const res = (a+b+c)**2;
+// console.log(res);
+
+// 37- Ramesh’s basic salary is input through the keyboard. His dearness allowance is 40% of basic salary, and house rent allowance is 20% of basic salary. Write a program to calculate his gross salary.
+// var basicSalary = 20000;
+// var dearnessAllowance = (basicSalary * 40) / 100;
+// var houseRent = (basicSalary * 20) / 100;
+// var grossSalary = basicSalary + dearnessAllowance + houseRent;
+// console.log(grossSalary)
+
+// 38- The distance between two cities (in km.) is input through the keyboard. Write a program to convert and print this distance in meters, feet, inches and centimeters.
+// var cityOne = 20;
+// var cityTwo = 10;
+// var meters = (cityOne - cityTwo) * 1000;  // 1km = 1000m
+// var feet = meters * 3.28084;    // 1meter = 3.28084feet
+// var inches = (feet * 12).toFixed(2);   // 1feet = 12inches
+// var centimeters = meters * 1000;    // 1meter = 1000cm
+// console.log(meters, feet, inches, centimeters);
+
+// 39- If the marks obtained by a student in five different subjects are input through the keyboard, find out the aggregate marks and percentage marks obtained by the student. Assume that the maximum marks that can be obtained by a student in each subject is 100.
+// var subjectOne = 20;
+// var subjectTwo = 30;
+// var subjectThree = 40;
+// var subjectFour = 50;
+// var subjectFive = 60;
+// // aggregate = sum of all marks
+// var aggregate = subjectOne + subjectTwo + subjectThree + subjectFour + subjectFive;
+// // percentage = total marks/ max.marks * 100
+// var percentage = (aggregate / 500 ) * 100;
+// console.log(percentage + '%', aggregate);
+
+// 40- Temperature of a city in Fahrenheit degrees is input through the keyboard. Write a program to convert this temperature into Centigrade degrees.
+// var fahrenheit = 98.6;
+// var centigrade = (5/9) * (fahrenheit - 32);
+// console.log(centigrade)
+
+// 41- The length & breadth of a rectangle and radius of a circle are input through the keyboard. Write a program to calculate the area & perimeter of the rectangle, and the area & circumference of the circle.
+// var l = 20;
+// var b = 30;
+// var r = 5;
+// var area = l*b;
+// var perimeter = 2 * (l+b);
+// var areaCircle = 3.14 * r**2;
+// var circumference = (2 * 3.14 * r).toFixed(2);
+// console.log(area, perimeter, areaCircle, circumference);
+
+// 42- Two numbers are input through the keyboard into two locations C and D. Write a program to interchange the contents of C and D.
+// var c = 20;
+// var d = 40;
+// [c,d] = [d,c]
+// console.log(c,d)
+
+// 43- If a five-digit number is input through the keyboard, write a program to calculate the sum of its digits. (Hint: Use the modulus operator ‘%’)\
+// var num = 12345;
+// var sum = 0;
+// while(num > 0){
+//     sum+= num % 10;
+//     num = Math.floor(num / 10);
+// }
+// console.log(sum);
+
+// var num = 12345;
+// function sumDigits(num){
+//     if(num === 0) return 0;
+//     return (num % 10) + sumDigits(Math.floor(num / 10));
+// }
+// const res = sumDigits(num);
+// console.log(res)
+
+// 44- If a five-digit number is input through the keyboard, write a program to reverse the number.
+// var num = 12345;
+// var reverse = 0;
+// while(num>0){
+//     var digit = num % 10;
+//     reverse = reverse * 10 + digit;
+//     num = Math.floor(num / 10);
+// }
+// console.log(reverse);
+
+// var num = 12345;
+// function reverseFn(num, rev=0){
+//     if(num === 0) return rev;
+//     return reverseFn(Math.floor(num / 10), rev * 10 + (num % 10));
+// }
+// const res = reverseFn(num);
+// console.log(res);
