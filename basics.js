@@ -302,3 +302,32 @@
 // }
 // const res = reverseFn(num);
 // console.log(res);
+
+// 45- If a four-digit number is input through the keyboard, write a program to obtain the sum of the first and last digit of this number.
+// var num = 12345 // 1+5 = 6   ----> it will work only for four digits
+// var sum = 0;
+// var firstDigit = Math.floor(num / 10000);
+// var lastDigit = num % 10;
+// sum = firstDigit + lastDigit;
+// console.log(sum);
+
+// var num = 123456789;
+// var sum = 0;
+// var lastDigit = num % 10;
+// while(num >= 10){
+//     num = Math.floor(num / 10);
+// }
+// var firstDigit = num;
+// sum = firstDigit + lastDigit;
+// console.log(sum);
+
+// var num = 12345;
+// var lastDigit = num % 10;
+// var sum = 0;
+// function getSum(num){
+//     if(num <= 10) return num;
+//     return getSum(Math.floor(num / 10))
+// }
+// var firstDigit = getSum(num);
+// sum = firstDigit + lastDigit;
+// console.log(sum);
