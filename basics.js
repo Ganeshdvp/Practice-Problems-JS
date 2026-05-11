@@ -331,3 +331,17 @@
 // var firstDigit = getSum(num);
 // sum = firstDigit + lastDigit;
 // console.log(sum);
+
+// 46- In a town, the percentage of men is 52. The percentage of total literacy is 48. If total percentage of literate men is 35 of the total population, write a program to find the total number 48 Let Us C of illiterate men and
+// function C(totalPopulation, totalMenPercentage, totalLiteracyMen, totalLiteracy, ){
+//     let illiterateMen = totalMenPercentage - totalLiteracyMen  // 52 - 35 = 17%
+//     let illiterateWomen = (100 - totalMenPercentage) - (totalLiteracy - totalLiteracyMen);
+//     let illiterateMenRes = Math.floor((illiterateMen/100) * totalPopulation);
+//     let illiterateWomenRes = Math.floor((illiterateWomen/100) * totalPopulation);
+
+//     return [illiterateMenRes, illiterateWomenRes]
+
+// }
+// const res = C(80000, 52, 35, 48);
+// console.log(res[0]);
+// console.log(res[1]);
