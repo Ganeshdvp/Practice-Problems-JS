@@ -345,3 +345,56 @@
 // const res = C(80000, 52, 35, 48);
 // console.log(res[0]);
 // console.log(res[1]);
+
+// 47- A cashier has currency notes of denominations 10, 50 and 100. If the amount to be withdrawn is input through the keyboard in hundreds, find the total number of currency notes of each denomination the cashier will have to give to the withdrawer.
+// let input = 100;
+// let temp = 0;
+// let fifthy = 0;
+// let tens = 0;
+// let ones = 0;
+
+// for(let i=1; i<=temp+1; i++){
+//     if(i*100 <= input){
+//         temp = i;
+//     }
+// }
+// for(let i=1; i<=fifthy+1; i++){
+//     if((temp*100) + (i*50) <= input){
+//         fifthy = i;
+//     }
+// }
+// for(let i=1; i<=tens+1; i++){
+//     if((temp*100) + (fifthy*50) + (i*10) <= input){
+//         tens = i;
+//     }
+// }
+// for(let i=1; i<=ones+1; i++){
+//     if((temp*100) + (fifthy*50) + (tens*10) + (i*1) <= input){
+//         ones = i;
+//     }
+// }
+// console.log("100's are : " , temp);
+// console.log("50's are : " , fifthy);
+// console.log("10's are : " , tens);
+// console.log("1's are : " , ones);
+
+// let input = 880;          --------> Optimized one
+// let hundreds = Math.floor(input/100);
+// input = input % 100;
+// let fifthy = Math.floor(input/50);
+// input = input % 50;
+// let tens = Math.floor(input/10);
+// input = input % 10;
+
+// console.log("100's are : " , hundreds);
+// console.log("50's are : " , fifthy);
+// console.log("10's are : " , tens);
+
+// 48- If the total selling price of 15 items and the total profit earned on them is input through the keyboard, write a program to find the cost price of one item.
+// let sellingPrice = 15000;
+// let totalProfits = 3000;
+// let totalCostPrice = Math.floor(sellingPrice - totalProfits);
+// let priceOfEachItem = Math.floor(totalCostPrice / 15);
+// console.log("each product price is :", priceOfEachItem);
+
+
