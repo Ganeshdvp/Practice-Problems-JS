@@ -397,4 +397,118 @@
 // let priceOfEachItem = Math.floor(totalCostPrice / 15);
 // console.log("each product price is :", priceOfEachItem);
 
+// 49- If a five-digit number is input through the keyboard, write a program to print a new number by adding one to each of its digits. For example if the number that is input is 12391 then the output should be displayed as 23402.
+// let input = 90379;
+// let toString = input.toString().split('');
+// let modify_num = [];
 
+// for(let i=0; i<toString.length; i++){
+//     let digit = Number(toString[i]);
+//     if(digit === 9){
+//         modify_num.push(0);
+//     }
+//     else{
+//         modify_num.push(digit+1);
+//     }
+// }
+// let result = modify_num.join('')
+// console.log(result);
+
+// let input = 10001;
+// let modify_num = 0;
+// let place = 1;
+
+// while(input > 0){
+//     let digit = Math.floor(input % 10);
+//     let newDigit;
+
+//     if(digit === 9){
+//         newDigit = 0;
+//     }
+//     else{
+//         newDigit = digit + 1;
+//     }
+
+//     modify_num = modify_num + (newDigit * place);
+//     place = place * 10;
+   
+//     input = Math.floor(input / 10);
+// }
+// console.log(modify_num);
+
+// 50- Write a program that converts Centigrade to Fahrenheit. Expected Output : Input a temperature (in Centigrade): 45 113.000000 degrees Fahrenheit.
+// let centigrade = 45;
+// let fahrenheit = (9/5) * centigrade + 32;
+// console.log(fahrenheit);
+
+// 51- Write a JavaScript program that calculates the volume of a sphere. Expected Output : Input the radius of the sphere : 2.56 The volume of the sphere is 70.276237.
+// let radiusOfSphere = 2.56;
+// let volumeOfSphere = (4/3) * Math.PI * Math.pow(radiusOfSphere, 3);
+// console.log(volumeOfSphere.toFixed(2));
+
+// 52- Write a JavaScript program that prints the perimeter of a rectangle to take its height and width as input. Expected Output : Input the height of the Rectangle : 5 Input the width of the Rectangle : 7 Perimeter of the Rectangle is : 24.000000
+// let height = 5;
+// let width = 7;
+// let perimeterOfRectangle = 2 * (height + width);
+// console.log(perimeterOfRectangle);
+
+// 53- Write a JavaScript program that converts kilometers per hour to miles per hour. Expected Output : Input kilometers per hour: 15 9.320568 miles per hour
+// let kilometers = 15;
+// let miles = kilometers * 0.621371;
+// console.log(miles);
+
+// 54- Write a JavaScript program that takes hours and minutes as input, and calculates the total number of minutes. Expected Output : Input hours: 5 Input minutes: 37 Total: 337 minutes.
+// let hours = 5;
+// let minutes = 37;
+// let result = ( 5 * 60 ) + minutes;
+// console.log(result);
+
+// 55- Write a program in JavaScript that takes minutes as input, and display the total number of hours and minutes. Expected Output : Input minutes: 546 9 Hours, 6 Minutes
+// let minutes = 546;
+// let hours = Math.floor(minutes / 60);
+// let minutesRes = Math.floor(minutes % 60);
+// console.log(hours, minutesRes);
+
+// 57- Write a program in JavaScript to calculate the sum of three numbers with getting input in one line separated by a comma. Expected Output : Input three numbers separated by comma : 5,10,15 The sum of three numbers : 30
+// let input = "5,10,15";
+// let splitInput = input.split(',');
+// let sum = Number(splitInput[0]) + Number(splitInput[1]) + Number(splitInput[2]);
+// console.log(sum);
+
+// 58- Write a JavaScript program to perform addition, subtraction, multiplication and division of two numbers Expected Output : Input any two numbers separated by comma : 10,5 The sum of the given numbers : 15 The difference of the given numbers : 5 The product of the given numbers : 50 The quotient of the given numbers : 2.000000;
+// let input = "10,5";
+// let splitInput = input.split(',');
+// let addition = Number(splitInput[0]) + Number(splitInput[1]);
+// let substraction = Number(splitInput[0]) - Number(splitInput[1]);
+// let multiplication = Number(splitInput[0]) * Number(splitInput[1]);
+// let division = Number(splitInput[0]) / Number(splitInput[1]);
+
+// console.log(addition, substraction, multiplication, division);
+
+// 59- Write a JavaScript program to find the third angle of a triangle if two angles are given. Expected Output : Input two angles of triangle separated by comma : 50,70 Third angle of the triangle : 60
+// let firstAngle = 50;
+// let secondAngle = 70;
+// let thirdAngle = 180 - (firstAngle + secondAngle);
+// console.log(thirdAngle);
+
+// 60- Write a script to display the maximum number in given two numbers using operators
+// let a = 100;
+// let b = 20;
+// let max = a > b ? a : b;
+// console.log(max);
+
+// 61- Write a script to display the maximum number in given three numbers using operators
+// let a = 100;
+// let b = 2000;
+// let c = 500;
+// let max = (a > b) ? (a>c ? a : c) : (b > c ? b : c)
+// console.log(max);
+
+// console.log(Math.max(100,200,500));
+
+// 62- Write a script to display the given two strings in ascending order using operators
+// let str1 = "hello";
+// let str2 = "world";
+// let first = str1 < str2 ? str1 : str2;
+// let second = str1 < str2 ? str2 : str1;
+// console.log(first, second);
