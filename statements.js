@@ -231,3 +231,183 @@
 // else{
 //     console.log("it is not");
 // }
+
+// 20- Leap year
+// let year = 2002;
+// if(year % 400 !== 0){
+//     console.log("it is not leap year");
+// }
+// else if(year % 100 === 0){
+//     console.log("it is leap year");
+// }
+// else{
+//     console.log("it is not leap year");
+// }
+
+// 21- Write a program to check whether a date is valid or not?
+// let day = 25;
+// let month = 3;
+// let year = 2024;
+
+// let date = new Date(year, month-1, day);
+
+// if(date.getFullYear() === year && date.getMonth() === month-1 && date.getDate() === day){
+//     console.log("it is valid date");
+// }
+// else{
+//     console.log("it is not valid date");
+// }
+
+// 22- Voting Eligibility Checker
+// let voterAge = 19;
+// if(voterAge >= 18){
+//     console.log("u r eligible");
+// }
+// else{
+//     console.log("u r not eligible");
+// }
+
+// 23- Check whether a number is negative, positive or zero.
+// let num = 20;
+// if(num === 0){
+//     console.log("it is zero");
+// }
+// else if(num > 0){
+//     console.log("it is positive number");
+// }
+// else{
+//     console.log("it is negative number");
+// }
+
+// 24- Check whether a number is divisible by 5 and 11 or not.
+// let num = 55;
+// if(num % 5 === 0 && num % 11 === 0){
+//     console.log("it is divisible");
+// }
+// else{
+//     console.log("it is not divisible");
+// }
+
+// 25- Input any alphabet and check whether it is vowel or consonant.
+// let letter = "b";
+// if(["a","e","i","o","u"].includes(letter)){
+//     console.log("it is vowel!");
+// }
+// else{
+//      console.log("it is consonant!");
+// }
+
+// 26- Input any character and check whether it is the alphabet, digit or special character.
+// let character = "#";
+// if(character >= 0 || character <=0){
+//     console.log("it is an digit!");
+// }
+// else if((character >= "a" && character <= "z") || (character >= "A" && character <= "Z")){
+//     console.log("it is an alphabet!");
+// }
+// else{
+//     console.log("it is special character!");
+// }
+
+// 27- Check whether a character is an uppercase or lowercase alphabet.
+// let character = "A";
+// if(character.toUpperCase() === character){
+//     console.log("Upper case!");
+// }
+// else{
+//     console.log("Lower case!");
+// }
+
+// 28- Input week number and print weekday?
+// let week = 5;
+// if(week === 1){
+//     console.log("monday");
+// }
+// else if(week === 2){
+//     console.log("tuesday");
+// }
+// else if(week === 3){
+//     console.log("wednesday");
+// }
+// else if(week === 4){
+//     console.log("thursday");
+// }
+// else if(week === 5){
+//     console.log("friday");
+// }
+// else if(week === 6){
+//     console.log("saturday");
+// }
+// else if(week === 7) {
+//     console.log("sunday");
+// }
+// else{
+//     console.log("Invalid week number");
+// }
+
+// 29- Input month number and print number of days in that month.
+// let month = 2;
+// if(month < 1 || month > 12){
+//      console.log("Invalid month");
+// }
+// if([1,3,5,7,8,10,12].includes(month)){
+//     console.log("31 days");
+// }
+// else if(month === 2){
+//     console.log("28 or 29 days");
+// }
+// else{
+//     console.log("30 days");
+// }
+
+// 30- Count the total number of notes in a given amount.
+// let amount = 2890;
+// let count = 0;
+
+// count += Math.floor(amount / 500);
+// amount = amount % 500;
+// count += Math.floor(amount / 200);
+// amount = amount % 200;
+// count += Math.floor(amount / 100);
+// amount = amount % 100;
+// count += Math.floor(amount / 50);
+// amount = amount % 50;
+// count += Math.floor(amount / 10);
+// amount = amount % 10;
+// count += Math.floor(amount / 5);
+// amount %= 5;
+// count += Math.floor(amount / 2);
+// amount %= 2;
+// count += amount;
+
+// console.log("Total Notes:", count);
+
+// 31- Input angles of a triangle and check whether the triangle is valid or not.
+// let angle1 = 60;
+// let angle2 = 60;
+// let angle3 = 60;
+
+// if(angle1 > 0 && angle2 > 0 && angle3 > 0 && angle1 + angle2 + angle3 === 180){
+//     console.log("it is valid triangle!");
+// }
+// else{
+//     console.log("it is not valid triangle!");
+// }
+
+// 32- Check whether the triangle is an equilateral, isosceles or scalene triangle.
+// let angle1 = 60;
+// let angle2 = 60;
+// let angle3 = 60;
+
+// if(angle1 + angle2 + angle3 !== 180){
+//     console.log("Not a valid triangle");
+// }
+// else if((angle1 === angle2 && angle2 === angle3)){
+//     console.log("it is equilateral triangle!");
+// }
+// else if((angle1 === angle2 && angle2 !== angle3) || (angle2 === angle3 && angle3 !== angle1) || (angle3 === angle1 && angle1 !==angle2)){
+//     console.log("it is Isosceles triangle!");
+// }
+// else{
+//     console.log("it is Scalene triangle!");
+// }
