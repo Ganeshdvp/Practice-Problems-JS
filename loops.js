@@ -1,0 +1,219 @@
+// 1- Write a program to print 1 to 10 numbers using a while loop
+// let i = 1;
+// while(i <= 10){
+//     console.log(i);
+//     i += 1;
+// }
+
+// 2- Write a program to print 10 to 1 numbers using a while loop
+// let i = 10;
+// while(i >= 1){
+//     console.log(i);
+//     i -= 1;
+// }
+
+// 3- Write a program to print 5 to 15 numbers using a while loop
+// let i = 5;
+// while(i <= 15){
+//     console.log(i);
+//     i += 1;
+// }
+
+// 4- Write a program to print 15 to 10 numbers using a while loop
+// let i = 15;
+// while(i >= 10){
+//     console.log(i);
+//     i -= 1;
+// }
+
+// 5- Write a program to print 1 to 10 even numbers using a while loop
+// let i = 1;
+// while (i <= 10){
+//     if(i%2 === 0){
+//         console.log(i);
+//     }
+//     i +=1;
+// }
+
+// 6- Write a program to print 1 to 10 odd numbers using a while loop
+// let i = 1;
+// while(i<=10){
+//     if(i%2 !== 0){
+//         console.log(i);
+//     }
+//     i +=1;
+// }
+
+// 7- Write a program to print first ten multiples of 4 using a while loop (multiples of 4 are 4,8,12,16,20,.....)
+// let i = 1;
+// while(i <= 10){
+//     console.log(4 * i);
+//     i += 1;
+// }
+
+// 8- Write a program to print multiplication table of 6 using while loop
+// let i = 1;
+// while( i <= 10 ){
+//     console.log("6 * ",i, "=", 6*i);
+//     i += 1;
+// }
+
+// 9- Print the squares of all numbers from 1 to 10.
+// let i = 1;
+// while(i <= 10){
+//     console.log(i * i);
+//     i += 1;
+// }
+
+// 10- Print the cubes of all numbers from 1 to 10.
+// let i = 1;
+// while(i <= 10){
+//     console.log(i ** i);
+//     i += 1;
+// }
+
+// 11- Write a program to print factors of 24 using while loop (factors of 24 are 1,2,3,4,6,8,12,24)
+// let i = 1;
+// while( i <= 24){
+//     if(24%i === 0){
+//         console.log(i);
+//     }
+//     i++;
+// }
+
+// 12- Write a program to print 1 to 10 numbers using a for loop?
+// for(let i = 1; i <= 10; i++){
+//     console.log(i);
+// }
+
+// 13- Write a program to print 10 to 1 numbers using a for loop?
+// let i = 10;
+// for(i; i >= 1; i--){
+//     console.log(i);
+// }
+
+// 14- Write a program to print all numbers from 1 to a given number
+// let num = 20;
+// for(let i = 1; i <= num; i++){
+//     console.log(i);
+// }
+
+// 15- Write a program to print 1 to 10 even numbers using a for loop?
+// for(let i = 1; i<=10; i++){
+//     if(i%2 === 0){
+//         console.log(i);
+//     }
+// }
+
+// 16- Write a program to print 1 to 10 odd numbers using a for loop
+// for(let i = 1; i<=10; i++){
+//     if(i%2 !== 0){
+//         console.log(i);
+//     }
+// }
+
+// 17- Write a program to print first 10 multiples of 3 using a for loop
+// for(let i = 1; i<=10; i++){
+//     console.log(i * 3);
+// }
+
+// 18- Write a program to print multiplication table of 6 using a for loop
+// for(let i = 1; i<=10; i++){
+//     console.log("6 * ", i, "=", 6*i);
+// }
+
+// 19- Write a program to print all the factors of a given number
+// let n = 24;
+// for(let i = 1; i <= n; i++){
+//     if(n % i === 0){
+//         console.log(i);
+//     }
+// }
+
+// 20- a program to read 5 numbers and print the maximum and minimum number?
+// let num1 = 10;
+// let num2 = 20;
+// let num3 = 30;
+// let num4 = 40;
+// let num5 = 50;
+// let min = Math.min(num1,num2,num3,num4,num5);
+// let max = Math.max(num1,num2,num3,num4,num5)
+// console.log(min, max);
+
+// let num1 = 10;
+// let num2 = 20;
+// let num3 = 30;
+// let num4 = 40;
+// let num5 = 50;
+// let min = num1;
+// let max = num1;
+
+// if(max < num2) max = num2;
+// if(min > num2) min = num2;
+
+// if(max < num3) max = num3;
+// if(min > num3) min = num3;
+
+// if(max < num4) max = num4;
+// if(min > num4) min = num4;
+
+// if(max < num5) max = num5;
+// if(min > num5) min = num5;
+
+// console.log(min, max);
+
+// let nums = [10,20,30,40,50];
+// let min = nums[0];
+// let max = nums[0];
+// let i=1;
+// while( i < nums.length){
+//     if(nums[i] > max){
+//         max = nums[i]
+//     }
+//     if(nums[i] < min){
+//         min = nums[i]
+//     }
+//     i+=1;
+// }
+
+// console.log(min, max);
+
+// 21- a program to read 5 numbers and print only the even numbers
+// let nums = [1,2,3,4,5];
+// let i = 0;
+// while( i < nums.length){
+//     if( i % 2 === 0){
+//         console.log(i);
+//     }
+//     i += 1;
+// }
+
+// 22- Print all the digits of a given number?
+// let num = 12345;
+// while(num > 0){
+//     let digit = Math.floor(num%10);
+//     console.log(digit);
+//     num = Math.floor(num/10);
+// }
+
+// 23- Write a program to print only even digits of a given number The output should be 4,2,6 Ex. Let us take 154256?
+// let num = 154256;
+// while(num > 0){
+//     let digit = Math.floor(num%10);
+//     if(digit % 2 === 0){
+//         console.log(digit);
+//     }
+//     num = Math.floor(num/10);
+// }
+
+// 24- Write a program to print only odd digits of a given number Ex. Let us take 1542763 The output should be 1,5,7,3?
+// let num = 1542763;
+// while(num > 0){
+//     let digit = Math.floor(num%10);
+//     if(digit % 2 !== 0){
+//         console.log(digit);
+//     }
+//     num = Math.floor(num/10);
+// }
+
+// 25- Write a program to print the number at 10’s place?
