@@ -217,3 +217,146 @@
 // }
 
 // 25- Write a program to print the number at 10’s place?
+// let num = 12345;
+// let count = 0;
+// while(count <= 2){
+//     let digit = Math.floor(num%10);
+//     count +=1;
+//     if(count === 2){
+//         console.log(digit);
+//     }
+//     num = Math.floor(num/10);
+// }
+
+// let num = 12345;
+// let tensDigit = Math.floor(num/10) % 10;
+// console.log(tensDigit);
+
+// 26- Write a program to print the number at 100’s place?
+// let num = 12345;
+// let count = 0;
+// while(count <= 3){
+//     let digit = Math.floor(num%10);
+//     count +=1;
+//     if(count === 3){
+//         console.log(digit);
+//     }
+//     num = Math.floor(num/10);
+// }
+
+// let num = 12345;
+// let hundrendDigit = Math.floor(num/100) % 10;
+// console.log(hundrendDigit);
+
+// 27- Write a program to print the number at 1000’s place?
+// let num = 12345;
+// let count = 0;
+// while(count <= 4){
+//     let digit = Math.floor(num%10);
+//     count +=1;
+//     if(count === 4){
+//         console.log(digit);
+//     }
+//     num = Math.floor(num/10);
+// }
+
+// let num = 12345;
+// let thousandDigit = Math.floor(num/1000) % 10;
+// console.log(thousandDigit);
+
+// 28- Write a program to print the number at 10000’s place?
+// let num = 12345;
+// let count = 0;
+// while(count <= 5){
+//     let digit = Math.floor(num%10);
+//     count +=1;
+//     if(count === 5){
+//         console.log(digit);
+//     }
+//     num = Math.floor(num/10);
+// }
+
+// let num = 12345;
+// let tenThousandDigit = Math.floor(num/10000) % 10;
+// console.log(tenThousandDigit);
+
+// 29- Write a program to find the LCM of given two numbers?
+// let num1 = 12;
+// let num2 = 18;
+// let arr1 = [];
+// let arr2 = [];
+// let arr3 = [];
+
+// for(let i=1; i<=num1; i++){
+//     if(num1%i === 0){
+//         arr1.push(i);
+//     }
+// }
+// for(let i=1; i<=num2; i++){
+//     if(num2%i === 0){
+//         arr2.push(i);
+//     }
+// }
+// for(let i=0; i<arr1.length; i++){
+//     for(let j=0; j<arr2.length; j++){
+//         if(arr1[i] === arr2[j]){
+//             arr3.push(arr1[i])
+//         }
+//     }
+// }
+// let gcd = arr3[arr3.length - 1];
+// let lcm = num1 * num2 / gcd;
+// console.log(lcm);
+
+// let num1 = 12;
+// let num2 = 18;
+// let arr1 = [];
+// let arr2 = [];
+// let gcd = 1;
+
+// for(let i=1; i<=num1; i++){
+//     if(num1%i === 0){
+//         arr1.push(i);
+//     }
+// }
+// for(let i=1; i<=num2; i++){
+//     if(num2%i === 0){
+//         arr2.push(i);
+//     }
+// }
+// for(let i=0; i<arr1.length; i++){
+//     for(let j=0; j<arr2.length; j++){
+//         if(arr1[i] === arr2[j]){
+//             gcd = arr1[i]
+//         }
+//     }
+// }
+// let lcm = num1 * num2 / gcd;
+// console.log(lcm);
+
+// let a = 12;
+// let b = 18;
+
+// while (b !== 0) {   // Euclidean Algorithm
+//     let temp = b;
+//     b = a % b;
+//     a = temp;
+// }
+
+// let gcd = a;
+// let lcm = (12 * 18) / gcd;
+
+// console.log(lcm);
+
+// 30- Write a program to convert an octal number to a decimal?
+// let octalNumber = 123;
+// let decimal = 0;
+// let power = 0;
+
+// while(octalNumber !== 0){
+//     let digit = Math.floor(octalNumber%10);
+//     decimal = decimal + digit * (8 ** power);
+//     power +=1;
+//     octalNumber = Math.floor(octalNumber/10);
+// }
+// console.log(decimal);
