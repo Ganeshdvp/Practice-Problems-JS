@@ -345,7 +345,6 @@
 
 // let gcd = a;
 // let lcm = (12 * 18) / gcd;
-
 // console.log(lcm);
 
 // 30- Write a program to convert an octal number to a decimal?
@@ -360,3 +359,241 @@
 //     octalNumber = Math.floor(octalNumber/10);
 // }
 // console.log(decimal);
+
+// 31- Write a program to print the sum of 1 to 10 ( initialisation of sum variable with 0 )
+// let sum = 0;
+// for(let i=1; i<=10; i++){
+//     sum += i
+// }
+// console.log(sum);
+
+// let n = 10;
+// let sum = n * (n+1)/2;
+// console.log(sum);
+
+// 32- Write a program to print the average of 1 to 10?
+// let sum = 0;
+// for(let i=1; i<=10; i++){
+//     sum += i
+// }
+// let avg = sum/10;
+// console.log(avg);
+
+// 33- Write a program to print the sum of the numbers between the given two numbers?
+// let num1 = 10;
+// let num2 = 20;
+// let sum = 0;
+
+// for(let i=num1; i<=num2; i++){
+//     sum +=i
+// }
+// console.log(sum);
+
+// 34- Write a program to print the sum of even numbers between the given two numbers?
+// let num1 = 1;
+// let num2 = 20;
+// let sum = 0;
+
+// for(let i = num1; i<=num2; i++){
+//     if(i%2 === 0){
+//         sum += i
+//     }
+// }
+// console.log(sum);
+
+// 35- Write a program to print the sum of odd numbers between the given two numbers?
+// let num1 = 1;
+// let num2 = 20;
+// let sum = 0;
+
+// for(let i = num1; i<=num2; i+=2){
+//     sum += i
+// }
+// console.log(sum);
+
+// 36- Write a program to print the product of the numbers between 1 to 10 ( initialisation of product variable with 1 )?
+// let product = 1;
+// for(let i=1; i<=10; i++){
+//     product *= i
+// }
+// console.log(product);
+
+// 37- Write a program to find the product of all odd numbers between 1 and 10.?
+// let product = 1;
+// for(let i=1; i<=10; i++){
+//     if(i%2 !== 0){
+//         product *= i
+//     }
+// }
+// console.log(product);
+
+// 38- Write a program to print the nth power of a given number. n can be any positive number. (n=3 r =4 then answer must be 3*3*3*3 )?
+// let n = 3;
+// let r = 4;
+// console.log(n**r);
+
+// let n = 3;
+// let r = 4;
+// let power = 1;
+// for(let i=1; i<=r; i++){
+//     power *= n
+// }
+// console.log(power);
+
+// 39- Write a program to print factorial of a given number?
+// let n = 10;
+// let product = 1;
+// for(let i=1; i<=n; i++){
+//     product *= i
+// }
+// console.log(product);
+
+// 40- Write a program to print the nCr of given ‘n’ and ‘r’
+// let n = 4;
+// let r = 3;
+
+// let nFactorial = 1;
+// let rFactorial = 1;
+// let nrFactorial = 1;
+
+// for(let i=1; i<=n; i++){
+//     nFactorial *= i;
+// }
+// for(let i=1; i<=r; i++){
+//     rFactorial *= i;
+// }
+// for(let i=1; i<=(n-r); i++){
+//     nrFactorial *= i;
+// }
+
+// let combination = nFactorial/(rFactorial*nrFactorial);
+// console.log(combination);
+
+// 41- Write a program to print the number of factors of 24 using while loop (number of factors for 24 is 8)?
+// let n = 24;
+// let factorsCount = 0;
+// let i = 1;
+// while(i<=n){
+//     if(n%i === 0){
+//         factorsCount += 1;
+//     }
+//     i++;
+// }
+// console.log(factorsCount);
+
+// 42- Write a program to print the count of factors of a given number using for loop?
+// let n = 56;
+// let factorsCount = 0;
+
+// for(let i = 1; i<=n; i++){
+//     if(n%i === 0){
+//         factorsCount += 1;
+//     }
+// }
+// console.log(factorsCount);
+
+// 43- Write a program to check a given number is a prime number or not?
+// let n = 9;
+// let count = 0;
+// for(let i=1; i<=n; i++){
+//     if(n%i === 0){
+//         count +=1;
+//     }
+// }
+// if(count===2){
+//     console.log(n, "is prime number!");
+// }
+// else{
+//     console.log(n, "is not prime number!");
+// }
+
+// 44- print Number of Digits in given number.
+// let num = 10101111;
+// let count = 0;
+
+// while(num > 0){
+//     let digit = Math.floor(num%10);
+//     count+=1;
+//     num = Math.floor(num/10);
+// }
+// console.log(count);
+
+// 45- Write a program to count the number of ‘1’s in a given number?
+// let num = 10110101;
+// let count = 0;
+
+// while(num > 0){
+//     let digit = Math.floor(num%10);
+//     if(digit === 1){
+//         count+=1;
+//     }
+//     num = Math.floor(num/10);
+// }
+// console.log(count);
+
+// 46- Write a program to eliminate all 0’s from a given number.
+// let num = 1011010;
+// let modifyNum = 0;
+// let place = 1;
+
+// while(num > 0){
+//     let digit = Math.floor(num%10);
+//     if(digit !== 0){
+//         modifyNum = modifyNum + digit * place;
+//         place *= 10;
+//     }
+//     num = Math.floor(num / 10);
+// }
+// console.log(modifyNum);
+
+// 47- Write a program to print all the digits that are less than 5 in a given number?
+// let num = 1236789;
+// let modifyNum = 0;
+// let place = 1;
+
+// while(num > 0){
+//     let digit = Math.floor(num%10);
+//     if(digit < 5){
+//         modifyNum = modifyNum + digit * place;
+//         place *=10;
+//     }
+//     num = Math.floor(num / 10);
+// }
+// console.log(modifyNum);
+
+// 48- Print the greatest digit of a given number(n=1237456 then greatest digit is 7)?
+// let num = 1237456;
+// let max = 0;
+
+// while (num > 0){
+//     let digit = Math.floor(num%10);
+//     if(max < digit){
+//         max = digit;
+//     }
+//     num = Math.floor(num / 10);
+// }
+// console.log(max);
+
+// 49- sum of all digits of a given number Ex: let us take 19345 is the given number The output should be 22 (1+9+3+4+5)=22
+// let num = 19345;
+// let sum = 0;
+
+// while(num > 0){
+//     let digit = Math.floor(num%10);
+//     sum +=digit;
+//     num = Math.floor(num / 10);
+// }
+// console.log(sum);
+
+// 50- a program to print reverse of digits of a number?
+// let num = 12345;
+// let reverseNum = 0;
+// let place = 1;
+
+// while (num > 0){
+//     let digit = Math.floor(num%10);
+//     reverseNum = reverseNum * 10 + digit;
+//     place *= 10;
+//     num = Math.floor(num / 10);
+// }
+// console.log(reverseNum);
