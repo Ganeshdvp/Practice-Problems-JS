@@ -597,3 +597,70 @@
 //     num = Math.floor(num / 10);
 // }
 // console.log(reverseNum);
+
+// 51- print the binary value of 8?
+// let decimal = 10;
+// let binary = '';
+
+// while(decimal > 0){
+//     let digit = Math.floor(decimal % 2);
+//     binary = digit + binary;
+//     decimal = Math.floor(decimal/2);
+// }
+// console.log(binary);
+
+// 52- Write a program to convert a binary number into a decimal number
+// let binary = 1010;
+// let decimal = 0;
+// let power = 0;
+
+// while(binary > 0){
+//     let digit = Math.floor(binary%10);
+//     decimal = decimal + digit * (2**power);
+//     power += 1;
+//     binary = Math.floor(binary/10);
+// }
+// console.log(decimal);
+
+// 53- Write a program to check a given number is palindrome number or not?
+// let num = 121;
+// let originalNum = num;
+// let reverse = 0;
+
+// while(num > 0){
+//     let digit = Math.floor(num%10);
+//     reverse = reverse * 10 + digit;
+//     num = Math.floor(num/10);
+// }
+// if(reverse == originalNum){
+//     console.log('it is palindrome');
+// }
+// else{
+//     console.log('it is not palindrome');
+// }
+
+// 54- Write a program to check a given number is armstrong number or not Ex:153 is an armstrong number?
+// let num = 153;
+// let originalNum = num;
+// let count = 0;
+// let sum = 0;
+
+// while(num > 0){
+//     count++;
+//     num = Math.floor(num/10);
+// }
+
+// num = originalNum;
+
+// while(num > 0){
+//     let digit = Math.floor(num%10);
+//     sum = sum + (digit**count);
+//     num = Math.floor(num/10);
+// }
+
+// if(sum === originalNum){
+//     console.log("it is armstrong number");
+// }
+// else{
+//     console.log("it is not armstrong number");
+// }
