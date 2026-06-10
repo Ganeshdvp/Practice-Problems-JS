@@ -664,3 +664,40 @@
 // else{
 //     console.log("it is not armstrong number");
 // }
+
+// 55- Write a program to print the fibonacci number series up to a given number Expected output:0 1 1 2 3 5 8 13
+// let n = 13;
+// let a = 0; 
+// let b = 1;
+// let flag = true;
+
+// console.log(a);
+// console.log(b);
+
+// while(flag){
+//     let c = a+b;
+//     if(n<c){
+//         flag = false;
+//         break;
+//     }
+//     console.log(c);
+//     a = b;
+//     b = c;
+// }
+
+// 56- Print A Calendar Taking Input From User Using Loop?
+// let daysInMonth = 31;
+// let startDay = 3; // 0=Sun, 1=Mon, 2=Tue, 3=Wed
+
+// console.log("Sun Mon Tue Wed Thu Fri Sat");
+
+// for(let i= 0; i<startDay; i++){
+//    process.stdout.write("    ");
+// }
+
+// for(let i= 1; i<=daysInMonth; i++){
+//    process.stdout.write(i.toString().padStart(3, ' ') + " ");
+//     if ((i + startDay) % 7 === 0) {
+//         console.log();
+//     }
+// }
