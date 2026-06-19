@@ -382,3 +382,148 @@
 //     }
 // }
 // printPrimes(10,50);
+
+
+// 24- check whether a given number is strong number or not?
+// function factorial(num){
+//     let fact = 1;
+//     for(let i=1; i<=num; i++){
+//         fact *= i
+//     }
+//     return fact;
+// }
+// function sum(num){
+//     let originalNum = num;
+//     let sum = 0;
+//     while(num > 0){
+//         let digit = Math.floor(num%10);
+//         let fact = factorial(digit);
+//         sum += fact;
+//         num = Math.floor(num/10);
+//     }
+//     if(sum === originalNum){
+//         console.log("it is strong number");
+//     }
+//     else{
+//         console.log("it is not strong number");
+//     }
+// }
+// sum(145);
+
+
+// 25- Print all strong numbers between the given interval using functions?
+// function factorial(num){
+//     let fact = 1;
+//     for(let i=1; i<=num; i++){
+//         fact *= i
+//     }
+//     return fact;
+// }
+// function sum(start,end){
+//     for(let i=start; i<=end; i++){
+//         let sum = 0;
+//         let num = i;
+//         while(num > 0){
+//             let digit = Math.floor(num%10);
+//             let fact = factorial(digit);
+//             sum += fact;
+//             num = Math.floor(num/10);
+//         }
+//         if(sum === i){
+//             console.log(i);
+//         }
+//     }
+
+// }
+// sum(1,146);
+
+
+// 26- Armstrong numbers between the given interval using functions?
+// function countNums(num){
+//     let count = 0;
+//     while(num > 0){
+//         count++;
+//         num = Math.floor(num / 10);
+//     }
+//     return count;
+// }
+// function armstorng(start,end){
+//     for(let i = start; i<= end; i++){
+//         let count = countNums(i);
+//         let num = i;
+//         let sum = 0;
+//         while(num > 0){
+//             let digit = Math.floor(num%10);
+//             sum += (digit ** count);
+//             num = Math.floor(num/10);
+//         }
+//         if(sum === i){
+//             console.log(i);
+//         }
+        
+//     }
+// }
+// armstorng(1,1000);
+
+
+// 27- Print all perfect numbers between the given interval using functions?
+// function perfectNums(start,end){
+//     for(let i=start; i<=end; i++){
+//         let sum = 0;
+//         for(let j=1; j<i; j++){
+//             if(i%j === 0){
+//                 sum += j;
+//             }
+//         }
+//         if(sum === i){
+//             console.log(i);
+//         }
+//     }
+// }
+// perfectNums(1,100);
+
+
+// 28- Find the power of any number using recursion?
+// function powerFn(num,power){
+//     if(power === 0) return 1;
+//     return num * powerFn(num, power-1)
+// }
+// console.log(powerFn(4,2));
+
+
+// 29- Print all natural numbers between 1 to n using recursion?
+// function naturalNums(start, end){
+//     if(start === end) return console.log(end);
+//     console.log(start);
+//     return naturalNums(start+1,end)
+// }
+// naturalNums(1,10);
+
+
+// 30- Print all even or odd numbers in a given range using recursion?
+// function even(start,end){
+//     if(start > end){
+//         return;
+//     }
+//     if(start%2 === 0){
+//         console.log(start);
+//     }
+//     return even(start+1, end);
+// }
+// even(1,10);
+
+
+// 31- Sum of all natural numbers between 1 to n using recursion?
+// function naturalNums(start,end){
+//     if(start === end) return end;
+//     return start + naturalNums(start+1, end);
+// }
+// console.log(naturalNums(1,10));
+
+
+// 32- Find the sum of all even or odd numbers in a given range using recursion?
+// function evenSum(start,end){
+//     if(start > end) return 0;
+//     return start + evenSum(start+2,end)
+// }
+// console.log(evenSum(2,10));
