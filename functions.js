@@ -546,3 +546,55 @@
 
 
 // 38- Find gcd (HCF) of two numbers using recursion?
+// function gcd(a,b){
+//     if(b === 0) return a;
+//     return gcd(b, a%b)
+// }
+// console.log(gcd(12,18));
+
+
+// 39- Find lcm of two numbers using recursion?
+// function gcd(a,b){
+//     if(b === 0) return a;
+//     return gcd(b, a%b)
+// }
+// function lcm(a,b){
+//     return a*b / gcd(a,b);
+// }
+// console.log(lcm(12,18));
+
+
+// 40- Display all array elements using recursion?
+// const arr = [10, 20, 30, 40, 50];
+// function display(arr, index = 0){
+//     if(index === arr.length){
+//         return;
+//     }
+//     console.log(arr[index]);
+//     display(arr, index + 1)
+// }
+// display(arr);
+
+
+// 41- Find the sum of elements of the array using recursion?
+// const arr = [10, 20, 30, 40, 50];
+// function sum(arr, index = 0){
+//     if(index === arr.length){
+//         return 0;
+//     }
+//     return arr[index] + sum(arr, index+1);
+// }
+// console.log(sum(arr));
+
+
+// 42- Find maximum and minimum elements in an array using recursion?
+// const arr = [10, 50, 20, 80, 30];
+// function findMax(arr, index = 0){
+//     if(index === arr.length - 1){
+//         return arr[index]
+//     }
+//     let maxOfRest = findMax(arr, index + 1);
+
+//     return arr[index] > maxOfRest ? arr[index] : maxOfRest;
+// }
+// console.log(findMax(arr));
