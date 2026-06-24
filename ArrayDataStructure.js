@@ -121,7 +121,12 @@
 // }
 // console.log(newArray);
 
-// 13- a program to store an array into another array var ar = [23,34,54,10,4,7] var br = [ ] Expected output: br = [23,34,54,10,4,7]
+// 13- a program to store an array into another array var ar = [23,34,54,10,4,7] var br = [] Expected output: br = [23,34,54,10,4,7]
 // let arr = [23,34,54,10,4,7];
 // let br = [...arr]
 // console.log(br);
+
+// 14- Sort an array in ascending order. Given array: [23,34,54,10,4,7] Expected output: 4,7,10,23,34,54
+// let arr = [23,34,54,10,4,7];  // 4,7,10,23,34,54
+// let sort = arr.sort((i,j)=> i-j)
+// console.log(sort);
