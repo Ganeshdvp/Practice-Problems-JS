@@ -130,3 +130,85 @@
 // let arr = [23,34,54,10,4,7];  // 4,7,10,23,34,54
 // let sort = arr.sort((i,j)=> i-j)
 // console.log(sort);
+
+// selection sort
+// let arr = [23,34,4,54,10,4,4,7];
+// for(let i=0; i<arr.length; i++){
+//     let small = arr[i+1];
+//     let index = i+1;
+//     for(let j=i+1; j<arr.length; j++){
+//         if(small > arr[j]){
+//             small = arr[j];
+//             index = j;
+//         }
+//     }
+//     if(arr[i] > arr[index]){
+//         let temp = arr[i];
+//         arr[i] = arr[index];
+//         arr[index] = temp;
+//     }
+// }
+// console.log(arr);
+
+// Bubble sort
+// let arr = [23,34,54,10,4,7];
+// for(let i = 0; i<=(arr.length/2); i++){
+//     for(let j = 0; j<arr.length; j++){
+//         if(arr[j] > arr[j+1]){
+//             let temp = arr[j];
+//             arr[j] = arr[j+1];
+//             arr[j+1] = temp;
+//         }
+//     }
+// }
+// console.log(arr);
+
+// Insertion sort
+// let arr = [23, 34, 54, 10, 4, 7];
+// for (let i = 1; i < arr.length; i++) {
+//     let current = arr[i];
+//     let j = i-1;
+//     while(j >= 0 && current < arr[j]){
+//         arr[j+1] = arr[j];
+//         j--;
+//     }
+//     arr[j+1] = current;   
+// }
+// console.log(arr);
+
+// Merge sort
+// let arr = [23, 34, 54, 10, 4, 7];
+// function mergeSort(arr){
+//     if(arr.length <= 1) return arr;
+//     let mid = Math.floor(arr.length/2);
+//     let left = mergeSort(arr.slice(0,mid))
+//     let right = mergeSort(arr.slice(mid))
+
+//     return merge(left, right);
+// }
+// function merge(left, right){
+//     let p1 = 0;
+//     let p2 = 0;
+//     let newArray = [];
+
+//     while(p1 < left.length && p2 < right.length){
+//         if(left[p1] < right[p2]){
+//             newArray.push(left[p1]);
+//             p1+=1
+//         }
+//         else{
+//             newArray.push(right[p2]);
+//             p2+=1;
+//         }
+//     }
+//     while(p1 < left.length){
+//         newArray.push(left[p1]);
+//         p1+=1
+//     }
+//     while(p2 < right.length){
+//         newArray.push(right[p2])
+//         p2+=1
+//     }
+//     return newArray;
+// }
+// console.log(mergeSort(arr));
