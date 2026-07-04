@@ -212,3 +212,151 @@
 //     return newArray;
 // }
 // console.log(mergeSort(arr));
+
+
+// 15- Reduce the each element of the array by 25% and store in a separate array.
+// let arr = [23, 34, 54, 10, 4, 7];
+// let newArray = [];
+// for(let i=0; i<arr.length; i++){
+//     let findPercentage = Math.floor(arr[i] * 25 / 100);
+//     let newEle = arr[i] - findPercentage;
+//     newArray.push(newEle)
+// }
+// console.log(newArray);
+
+// 16- Store only even numbers of a given array in another array;
+// let arr = [23, 34, 54, 10, 4, 7];
+// let evenArray = [];
+// for(let i=0; i<arr.length; i++){
+//     if(arr[i] % 2 === 0){
+//         evenArray.push(arr[i])
+//     }
+// }
+// console.log(evenArray);
+
+// 17- create a duplicate array for a given array.
+// let arr = [1,2,2,3,4,1,5,6,6] // [1,2,6]
+// let duplicateArray = [];
+// for(let i=0; i<arr.length; i++){
+//     let count = 0;
+//     for(let j=i+1; j<arr.length; j++){
+//         if(arr[i] === arr[j]){
+//             count++
+//         }
+//     }
+//     if(count>0){
+//         duplicateArray.push(arr[i])
+//     }
+// }
+// console.log(duplicateArray);
+
+// 18- Eliminate duplicates from a array?
+// let arr = [1,2,2,3,4,1,5,6,6]; // [1,2,3,4,5,6]
+// let newArray = [];
+// for(let i=0; i<arr.length; i++){
+//     let found = false;
+//     for(let j=0; j<newArray.length; j++){
+//         if(arr[i] === newArray[j]){
+//             found = true;
+//             break;
+//         }
+//     }
+//     if(!found){
+//         newArray.push(arr[i])
+//     }
+// }
+// console.log(newArray);
+
+// 19- print only the perfect squares in an array?
+// let arr = [4, 7, 9, 10, 16, 20, 25, 30];  // [4,9,16,25]
+// for(let i=0; i<arr.length; i++){
+//     let root = Math.sqrt(arr[i]);
+//     if(Number.isInteger(root)){
+//          console.log(arr[i]);
+//     }
+// }
+
+// 20- Print only the 2 digit numbers from an array?
+// let arr = [1,20,30,2,50,100,22] // [20,30,50,22]
+// for(let i=0; i<arr.length; i++){
+//     let count=0;
+//     let num = arr[i]
+//     while(num > 0){
+//         count++
+//         num = Math.floor(num/10);
+//     }
+//     if(count === 2){
+//         console.log(arr[i]);  
+//     }
+// }
+
+// 21- Print only multiples of 5 from an array?
+// let arr = [23, 25, 30, 17, 45, 52, 100, 9];  // [25,30,45,100]
+// for(let i=0; i<arr.length; i++){
+//     if(arr[i] % 5 === 0){
+//         console.log(arr[i]);
+//     }
+// }
+
+// 22- Print only multiples of 2 AND 3 from an array?
+// let arr = [23, 25, 30, 17, 45, 52, 100, 9];
+// for(let i=0; i<arr.length; i++){
+//     if(arr[i] % 2 === 0 && arr[i] % 3 === 0){
+//         console.log(arr[i]);
+//     }
+// }
+
+// 23- Print only multiples of 3 OR 5 from an array?
+// let arr = [23, 25, 30, 17, 45, 52, 100, 9];
+// for(let i=0; i<arr.length; i++){
+//     if(arr[i] % 3 === 0 || arr[i] % 5 === 0){
+//         console.log(arr[i]);
+//     }
+// }
+
+// 24- Increment 5% for all the salaries in a given array?
+// let salaries = [20000, 35000, 50000, 75000];  // [21000, 36750, 52500, 78750]
+// let newArray = [];
+// for(let i=0; i<salaries.length; i++){
+//     let findIncrement = Math.floor(salaries[i] * 5 / 100);
+//     let finalAmount = salaries[i] + findIncrement;
+//     newArray.push(finalAmount);
+// }
+// console.log(newArray);
+
+// 25- For every basic salary present in the array, add 40% HRA, 92% DA, 10% Tax and display the final output?
+// let salaries = [20000, 35000, 50000, 75000];  // [44400, 77700, 111000, 166500]
+// let newArray = [];
+// for(let i=0; i<salaries.length; i++){
+//     let hrf = Math.floor(salaries[i] * 40 / 100);
+//     let da = Math.floor(salaries[i] * 92 / 100);
+//     let tax = Math.floor(salaries[i] * 10 / 100);
+//     let finalAmount = hrf + da - tax;
+//     newArray.push(salaries[i] + finalAmount);
+// }
+// console.log(newArray);
+
+// 26- For every salary, deduct 10% tax for salaries less than 50000 and deduct 12% tax for salaries more than 50000?
+// let salaries = [20000, 35000, 50000, 75000];
+// let newArray = [];
+// for(let i=0; i<salaries.length; i++){
+//     if(salaries[i] > 50000){
+//         let tax = Math.floor(salaries[i] * 12 / 100);
+//         let finalAmount = salaries[i] - tax;
+//         newArray.push(finalAmount);
+//     }
+//     else{
+//         let tax = Math.floor(salaries[i] * 10 / 100);
+//         let finalAmount = salaries[i] - tax;
+//         newArray.push(finalAmount);
+//     }
+// }
+// console.log(newArray);
+
+// 27- Print only those odd numbers in a given array which are divisible by 3?
+// let arr = [23, 25, 30, 17, 45, 52, 100, 9, 21, 18, 15];
+// for(let i=0; i<arr.length; i++){
+//     if(arr[i] % 2 !== 0 && arr[i] % 3 === 0){
+//         console.log(arr[i]);   
+//     }
+// }
