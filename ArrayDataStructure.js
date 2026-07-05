@@ -360,3 +360,60 @@
 //         console.log(arr[i]);   
 //     }
 // }
+
+// 28- Insert first 10 odd numbers in an empty array(for and while).
+// let arr = [];
+// for(let i=1; i<=10; i++){
+//     if(i%2 !== 0){
+//         arr.push(i)
+//     }
+// }
+// console.log(arr);
+
+// let arr = [];
+// let i=1;
+// while(i<=10){
+//     if(i%2 !== 0){
+//         arr.push(i);
+//     }
+//     i++;
+// }
+// console.log(arr);
+
+
+// 29- Print the elements present in the second half of the array?
+// let arr = [10, 20, 30, 40, 50, 60];
+// let mid = Math.floor(arr.length/2);
+// for(let i=mid; i<arr.length; i++){
+//     console.log(arr[i]);
+// }
+
+// 30- Print the greatest of all 2-digit numbers present in an array?
+// let arr = [5, 23, 108, 67, 9, 45, 101];
+// let greatest = 0;
+// for(let i=0; i<arr.length; i++){
+//     let num = arr[i];
+//     let count = 0;
+//     while(num > 0){
+//         count++
+//         num = Math.floor(num/10);
+//     }
+//     if(count === 2 && greatest < arr[i]){
+//         greatest = arr[i]
+//     }
+// }
+// console.log(greatest);
+
+// 31- Write a program to remove elements from an array which are not in the ascending order Ex: Original array: [12,34,11,56,37,98,23,67,109,45] Output : [12,34,56,98,109]?
+// let arr = [12,34,11,56,37,98,23,67,109,45];  // [12,34,56,98,109]
+// let p = 0;
+// for(let i=1; i<arr.length; i++){
+//     if(arr[i] > arr[p]){
+//         arr[p+1] = arr[i];
+//         p++;
+//     }
+// }
+// arr.length = p+1;
+// console.log(arr);
+
+
