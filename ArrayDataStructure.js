@@ -417,3 +417,83 @@
 // console.log(arr);
 
 
+// 32- Write script to merge array as the values of ar in the first and values of br next. Expected output: [19,12,23,4,15,26,37,18,79,10];
+// var ar = [19,12,23,4,15];
+// var br = [26,37,18,79,10];
+// var newArray = [...ar, ...br];
+// console.log(newArray);
+
+// 33- Write script to merge array as the values of ar in the first and values of br next? Expected output: [26,37,18,79,10,19,12,23,4,15];
+// var ar = [19,12,23,4,15];
+// var br = [26,37,18,79,10];
+// var newArray = [...br, ...ar];
+// console.log(newArray);
+
+
+// 34- Expected output: [1,2,3,4,5,6,7,8,9];
+// var ar = [1,2,3,7,8,9];
+// var br = [4,5,6];
+// let sortedArray = [];
+// let i = 0;
+// let j = 0;
+
+// while( j<br.length && i<ar.length){
+//     if(ar[i] < br[j]){
+//         sortedArray.push(ar[i]);
+//         i++;
+//     }
+//     else{
+//         sortedArray.push(br[j]);
+//         j++;
+//     }
+// }
+// while(i < ar.length){
+//     sortedArray.push(ar[i]);
+//     i++;
+// }
+// while(j < br.length){
+//     sortedArray.push(ar[j]);
+//     j++;
+// }
+// console.log(sortedArray);
+
+
+// 35- insert An Element Desired or Specific Position In An Array?
+// let arr = [1,2,4,5,6]  // 6 insert at 2nd position :- [1,2,3,4,5,6]
+// let target = 3;
+// let position = 2;
+// for(let i=arr.length; i>position; i--){
+//     arr[i] = arr[i-1]
+// }
+// arr[position] = target
+// console.log(arr);
+
+
+// 36- Remove Duplicates Items In An Array?
+// let arr = [1,1,2,3,4,4,5,5,5];
+// let k = 0;
+// for(let i = 0; i<arr.length; i++){
+//     let count = 0;
+//     for(let j=i+1; j<arr.length; j++){
+//         if(arr[i] === arr[j]){
+//             count++;
+//             break;
+//         }
+//     }
+//     if(count <= 0){
+//         arr[k] = arr[i];
+//         k++;
+//     }
+// }
+// arr.length = k
+// console.log(arr);
+
+// 37- Delete Element From Array At Desired Or Specific Position?
+// let arr = [1,2,3,4,5,6]
+// let position = 3;
+
+// for(let i=position; i<arr.length; i++){
+//     arr[i] = arr[i+1]
+// }
+// arr.length = arr.length-1
+// console.log(arr);
